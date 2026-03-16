@@ -18,11 +18,20 @@ def write_rows(df: pd.DataFrame, writer: PdfWriter, page_idx):
         raise Exception("diocan")
     
     for i in range(len(df)):
+        
+        morning = ""
+        afternoon = ""
+        
+        if df["hours_morning"].iloc[i] > 0:
+            morning = df["morning_from"].iloc[i].strftime("%H:%M") + " / " + df["morning_to"].iloc[i].strftime("%H:%M")
+        if df["hours_afternoon"].iloc[i] > 0:
+            afternoon = df["afternoon_from"].iloc[i].strftime("%H:%M") + " / " + df["afternoon_to"].iloc[i].strftime("%H:%M")
+        
         data = [
             df["date"].iloc[i].strftime("%d/%m/%Y"),
             df["description"].iloc[i],
-            df["morning_from"].iloc[i].strftime("%H:%M") + " / " + df["morning_to"].iloc[i].strftime("%H:%M"),
-            df["afternoon_from"].iloc[i].strftime("%H:%M") + " / " + df["afternoon_to"].iloc[i].strftime("%H:%M"),
+            morning,
+            afternoon,
             str(df["hours"].iloc[i])
         ]
         
