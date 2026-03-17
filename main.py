@@ -1,9 +1,6 @@
 from pypdf import PdfReader, PdfWriter
 import pandas as pd
-import PIL.Image
-
-import the_writer 
-
+import the_writer
 
 TEMPLATE = "Scheda ORE FIM.pdf"
 DATA = "data.csv"
