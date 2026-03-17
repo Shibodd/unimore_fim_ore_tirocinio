@@ -1,1 +1,12 @@
 date,description,morning_from,morning_to,afternoon_from,afternoon_to
+19/01/2026,Studio letteratura,09:00,13:00,14:00,17:00
+20/01/2026,Studio letteratura,09:00,13:00,00:00,00:00
+16/02/2026,Implementazione,09:00,13:00,14:00,17:00
+17/02/2026,Implementazione,09:00,13:00,00:00,00:00
+23/02/2026,Debugging,09:00,13:00,00:00,00:00
+24/02/2026,Debugging,09:00,13:00,00:00,00:00
+25/02/2026,Tuning,09:00,13:00,14:00,15:00
+26/02/2026,Tuning,09:00,13:00,14:00,16:00
+02/03/2026,Raccolta dati,09:00,13:00,14:00,17:00
+11/03/2026,Stesura tesi,09:00,13:00,14:00,15:00
+12/03/2026,Stesura tesi,09:00,13:00,00:00,00:00

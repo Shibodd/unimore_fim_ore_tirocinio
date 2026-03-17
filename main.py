@@ -5,14 +5,14 @@ import PIL.Image
 import the_writer 
 
 
-TEMPLATE = "raw.pdf"
+TEMPLATE = "Scheda ORE FIM.pdf"
 DATA = "data.csv"
 OUTPUT = "out.pdf"
 
 person = the_writer.Person(
-    "Bondi",
-    "Simone",
-    "196792",
+    "Eusebio",
+    "Tritagatti",
+    "123456",
     "Informatica"
 )
 
